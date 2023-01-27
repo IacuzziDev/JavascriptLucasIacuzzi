@@ -1,5 +1,5 @@
 function simuladorDeIntereses(montoPrestamo, cantidadMeses) {
-    const tasaInteres = 0.12;
+    const tasaInteres = 0.08;
     let montoTotal = montoPrestamo;
     for (let i = 0; i < cantidadMeses; i++) {
     montoTotal += montoTotal * tasaInteres;
@@ -8,6 +8,7 @@ function simuladorDeIntereses(montoPrestamo, cantidadMeses) {
 }
 
 function datosPrestamos() {
+    alert ("Simulador de prestamo JS")
     const sueldoMinimo = 100000;
     const nombre = prompt("Ingresa tu nombre:");
     const apellido = prompt("Ingresa tu apellido:");
@@ -29,7 +30,7 @@ function datosPrestamos() {
     }
     } else {
     alert(
-        "Lo sentimos, tu ingreso mensual es insuficiente para acceder al préstamo"
+        `Lo sentimos ${nombre} ${apellido}, tu ingreso mensual es insuficiente para acceder al préstamo`
     );
     }
 }
